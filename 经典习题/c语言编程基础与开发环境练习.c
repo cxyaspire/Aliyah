@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main(void)
-{printf("Say my name!\n");//错误一：老是忘记反斜杠是哪个 
+{printf("Say my name!\n");//閿欒涓�锛氳�佹槸蹇樿鍙嶆枩鏉犳槸鍝釜 
  printf("Yao.\n");
  
- //使用多个printf进行输出 
+ //浣跨敤澶氫釜printf杩涜杈撳嚭 
  printf("*        *      *  ********  *    *   *          * \n");
  printf("*        *      *  *         *   *     *       *   \n");
  printf("*        *      *  *         *  *        *   *     \n");
@@ -20,6 +20,6 @@ int main(void)
  
  
  
- return 0;//错误二：忘记return在括号里面还是外面（已修正） 
+ return 0;//閿欒浜岋細蹇樿return鍦ㄦ嫭鍙烽噷闈㈣繕鏄闈紙宸蹭慨姝ｏ級 
 }
 
