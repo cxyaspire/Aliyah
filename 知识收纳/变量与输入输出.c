@@ -15,9 +15,9 @@
    优先级：{+ -（正负）++ --}高于{* / %}高于{+ -}
    赋值的类型转换（61）
 四、printf（67），scanf（73），putchar（76），getchar（77）
-     格式：putchar(某个字符），某字符=getchar()                                                          */
+     格式：putchar(某个字符），某字符=getchar()                                                        
     double是%lf或%le(以指数形式输出输出双精度浮点数)
-
+ */
 #include <stdio.h>
 int main(void)
 {
