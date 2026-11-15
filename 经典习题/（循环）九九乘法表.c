@@ -5,8 +5,8 @@ int i=1,n=1,u;
  for(i=1;i<=9;i++)     //行的循环 
    for(n=1;n<=i;n++)   //列的循环 
    {u=i*n;
-    if(n==i) printf("%d\n",u);
-	else  printf("%d\t",u);
+    if(n==i) printf("%d*%d=%d\n",n,i,u);
+	else  printf("%d*%d=%d\t",n,i,u);
    }
    
 	
