@@ -3,10 +3,9 @@
 void sum(int begin,int end)//函数头:返回类型 函数名（参数表） 
 //以下为函数体 
 {int i,sum=0;
-for(i=begin;i<=end;i++)
-{sum+=i;
-}
-printf("%d到%d的和为%d\n",begin,end,sum);
+ for(i=begin;i<=end;i++)
+ {sum+=i;}
+ printf("%d到%d的和为%d\n",begin,end,sum);
 }
 
 int main()
