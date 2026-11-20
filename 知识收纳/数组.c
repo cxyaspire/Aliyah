@@ -29,7 +29,8 @@
     字符串的有效长度：有效字符（结束符前）的个数
 	数组长度>=字符串的有效长度+1
  (4)输入输出:%c与%s
-     输入：for(i=0;(s[i]=getchar())!='\n';i++)
+     输入：for(i=0;(s[i]=getchar())!='\n'&&s[i]!=EOF;i++)
+	       {}
 	        str[i]='\0';
 	 输出：for(i=0;s[i]!='\0';i++)
 	        putchar(s[i]);
@@ -39,12 +40,20 @@
     将输入的一串字符和'\0'送入数组中
 （6）使用字符串处理函数
      输入输出------puts函数、gets函数：只能输入或输出一个字符串，puts可自动换行  ；gets已经老了，现在基本上用fgets：char *fgets(char *str, int n, FILE *stream);
+	 gets:gets(a);
+	 fgets:fgets(a,sizeof(a),stdin)
+	       //手动换行
+		   for(int i=0;a[i]!='\0';i++) 
+		     if(a[i]=='\n')
+			 {a[i]='\0';
+			  break;
+			 }
 	 连接----------strcat(字符数组1，字符数组2)：字符数组1必须足够大
 	 复制----------strcpy和strncpy函数：strcpy(字符数组1，字符串2） 字符数组1必须足够大
-	 比较----------strcmp(字符串1，字符串2）：在英文字典中位置在后面的为"大"
+	 比较----------strcmp(字符串1，字符串2）：在英文字典中位置在后面的为"大"，常用于比较两个字符串是否相等
 	 测字符串长度--strlen(字符数组) 
  （7）用二维字符数组存放多个字符串
-    eg。char s[3][10]={"apple","banana","cherry"};
+    eg.char s[3][10]={"apple","banana","cherry"};
 	    第一维是字符串个数，第二维是每个字符串的最大长度（第二维必须足够大，，存cherry至少要7）
 		s[0] s[1] s[2]分别是三个字符串的首地址
 		printf("%s\n",s[1]); //输出banana
