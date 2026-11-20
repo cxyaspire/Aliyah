@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char a;
+while((a=getchar())!='\n'&&a!=EOF)   //特别注意：测试文件不一定以换行符结尾，此时为保证输入正确应写明a!=EOF
+    {if(a>='A'&&a<='Z')
+        printf("%c",'A'+'Z'-a);
+    else
+      printf("%c",a);
+    }
+    return 0;
+}
